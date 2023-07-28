@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+</blockquote>
+
+<hr>
+<p>Browsers usually insert quotation marks around the q element.</p>
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+<!--:' bundan sonra "" işareti koymaya yarar.-->
+<hr>
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<p>Marking up abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+<!-- mouse ile üzerine gelince mesaj kutusu gösterilir.-->
+<hr>
+
+<p>The HTML address element defines contact information (author/owner) of a document or article.</p>
+<address>
+Written by John Doe.<br> 
+Visit us at:
+Example.com - Box 564, Disneyland USA
+</address>
+<hr>
+
+<p>The HTML cite element defines the title of a work.</p>
+<p>Browsers usually display cite elements in italic.</p>
+<img src="img_the_scream.jpg" width="220" height="277" alt="The Scream">
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+<hr>
+<!-- gelen resmin altındaki The Scream yazısı italic olarak yazılır.-->
+
+<!--notları bu şekilde yorum satırına alabiliriz -->
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<!--border kısmında kenar çerçevesi ayarlanmış oluyor.-->
+
+<hr>
+<h2>The target Attribute</h2>
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a> 
+<p>If target="_blank", the link will open in a new browser window or tab.</p>
+<!--açılan yapı yeni sayfada direkt olarak açılacaktır.-->
+<hr>
+
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+<!-- aralarındaki ana fark birinde https:// ifadesinin olmamasıdır-->
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+<hr>
+
+<h2>Image as a Link</h2>
+<p>The image below is a link. Try to click on it.</p>
+<a href="html_images.asp"><img src="smiley.gif" alt="HTML images pages" style="width:42px;height:42px;"></a>
+<!-- buradaki alt kullanım sebebi: eğer internet olmazsa o zaman buna bakarak o resmin ne ile alakalı olduğu anlaşılabilir.-->
+<hr>
+
+<h2>Link to an Email Address</h2>
+<p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:</p>
+<p><a href="mailto:mailadresi.com">Send email</a></p>
+<hr>
+
+<h2>Button as a Links</h2>
+<p>Click the button to go to the HTML tutorial.</p>
+<button onclick="document.location='html_images.asp'">HTML Images</button>
+<hr>
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit </a>
+<!-- buradaki title kısmında mouse üzerine gelince uyarı kutucuğu çıkmasını sağlayan yapıdır. Visit link ismi, HTML Images ise button ismidir -->
+<hr>
+<br>
+<br>
+<p>Burada oluşturulan sıralı okuma düzeni-bookmark-</p>
+<p><a href="#C2">Jump to Chapter 2</a></p>
+<p><a href="#C4">Jump to Chapter 4 </a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C2">Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit </a>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<hr>
+<a href="default.html" 
+title="Home">Back to Home</a>
+<hr>
+
+<h2>Animated Images</h2>
+<p>HTML allows moving images:</p>
+<a href="html_images.asp">
+<img src="programming.gif" alt="Computer man" style="float:left;width:48px;height:48px;">
+<!-- yukarıda animasyon gifine link yerleştirmesi yapıldı.-->
+<br>
+<!-- float ile resmin ne tarafa yaslı olacağı belirlenir.Right ve left seçenekleri var.-->
+</a>
+<br>
+<br>
+<hr>
+
+<style>
+table, th, td 
+{border:1px solid black;}
+</style>
+<!--yukarıda aborder ile satırlar belirginleştirildi.-->
+<h2>tabloda satırlar oluşturulmaya çalışılır.</h2>
+<table style="width:100%">
+  <caption>Kişiler Tablosu</caption>
+<tr>
+  <th colspan="2"> Kişi1</th>
+  <th >Kişi2</th>
+  <th> Kişi3</th>
+  <th> Kişi4</th>
+ 
+</tr>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+    <td>Dilara</td>
+    <td>Elif</td>
+  </tr>
+</table>
+<br>
+<hr>
+<br>
+<br>
+
+<p> Sıralamasız listeleme yapılacaktır:</p>
+<u1 style="list-style-type:square">
+<li>Nesne1</li>
+<li>Nesne2</li>
+<li>Nesne3</li>
+</u1>
+<!-- bu listeleme de sırasız şekilde --unordered-- listelendi.-->
+<br>
+<br>
+<p> Sıralamalı listeleme yapılacaktır:</p>
+<ol type="A">
+<li>Nesne1</li>
+<li>Nesne2</li>
+<li>Nesne3</li>
+</ol>
+<!-- bu listeleme de sırlaı şekilde --unordered-- listelendi.-->
+
+<div style="background-color:powderblue">
+<dl> Tanımlayıcı Liste Yapımı</dl>
+<dt> artı işareti <span style="color:tomato">(+)</span> </dt>
+<dd> toplama yapmaya yarar</dd>
+<dt> eksi işareti (-)</dt>
+<dd> çıkarma işlemi yapar.</dd>
+<!-- dl: başlık yazmamızı sağlar. , dt:ana bölümü açıklamaya yarar. ,dd: alt satıra tab koyarak açıklama yazmamızı sağlar.-->
+</div>
+
+</body>
+</html>
+
