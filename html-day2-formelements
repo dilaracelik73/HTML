@@ -18,3 +18,44 @@
 </body>
 </html>
 
+<!-- ek olarak bu kodlarda yazıldı.-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2> The select Element</h2>
+<p> The select element defines a drop-down list:</p>
+<form action ="/action_page.php">
+<fieldset>
+<legend>genel örnekler</legend>
+<label for ="cars"> Choose a car:</label>
+<select id="cars" name="cars" size=4; multiple>
+<!-- multiple ile CRTL ile birden fazla seçim yapabilirsin.-->
+	<option value="volvo">Volvo</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+    <option value="saab">Saab</option>
+</select>
+<input type="submit"></input>
+<textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+</fieldset>
+
+<fieldset>
+<legend>datalist örneği</legend>
+<input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</legend>
+</fieldset>
+</form>
+</body>
+</html>
+
+
