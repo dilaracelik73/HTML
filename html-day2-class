@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Bu genel başlık</title>
+<style>
+.sehir{ background-color:tomato; color:green; padding:10px}
+.anayapı{text-align:center; background-color:blue ;color:black}
+#idyapısı{background-color:yellow; text-align:right}
+</style>
+</head>
+<body>
+<h2> Tüm classlar:</h2>
+<p> Yapılan cümleler için şehir ve anayapı adlı classları kullanma kısmı gösterilecek</p>
+
+<h2 class="sehir anayapı" >Ankara iki sınıf bir arada var.</h2>
+<h2 class="anayapı">Ankara sadece anayapı sınıfı var.</h2>
+<h2 class="sehir">Ankara sadece sehir sınıfı var.</h2>
+<h2 id="idyapısı">Bunda sola yatacak.</h2>
+</body>
+</html>
+<!-- SOR!!!!!!! Neden ikisinin bir arada olduğu yerde anayapı kısmındaki değişimler alınıyor???-->
+<!-- id yapısı ile class yapısı benzer aslında-->
+
+<div>
+<iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+<!--iframe web sayfası içinde sayfa açmaya yaramaktadır.-->
+</div>
+
+<div>
+<h2 >Code ile işlemler yapılır</h2>
+<pre>
+<code>
+x=5;   <!-- eğer pre olmazsa o zaman yan yana yazacak, olursa alt alta-->
+<var>y=10;</var> <!-- bunda da italik olarak yazılım sağlanacak.-->
+z=x+y;
+z=15;
+</pre>
+</code>
+</div>
